@@ -14,6 +14,8 @@ This project uses an **ESP8266** with a **DHT11 sensor** to measure **temperatur
 ## Current Status Feb25
 
 ![Circuit Diagram](https://github.com/lcniell123/garden-project/blob/main/img/4-connect-battery/battery-connect-1.jpg)
+<img width="2844" height="1556" alt="image" src="https://github.com/user-attachments/assets/1ca70baa-cc7e-4cf4-a1cd-654577094d88" />
+
 
 ✅ ESP8266 successfully serves **temperature & humidity** data.  
 ✅ Node.js server fetches data correctly.  
