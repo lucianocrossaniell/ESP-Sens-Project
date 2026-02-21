@@ -7,15 +7,16 @@ This project uses an **ESP8266** with a **DHT11 sensor** to measure **temperatur
 
 ## Features
 
-- ESP8266 hosts a web server to provide real-time sensor data.
+- ESP32 hosts a web server to provide real-time sensor data.
 - Node.js server fetches data and serves it at `http://localhost:3000/data`.
 - Optional frontend displays live temperature and humidity updates.
 
 ## Current Status Feb25
+![IMG_7143](https://github.com/user-attachments/assets/2ece8d11-839f-479f-b17a-2366083a856c)
 
-![Circuit Diagram](https://github.com/lcniell123/garden-project/blob/main/img/4-connect-battery/battery-connect-1.jpg)
 <img width="2844" height="1556" alt="image" src="https://github.com/user-attachments/assets/1ca70baa-cc7e-4cf4-a1cd-654577094d88" />
 
+![tech-diagram](https://github.com/user-attachments/assets/2bff754f-ea69-4346-ab53-eaa913855713)
 
 ✅ ESP8266 successfully serves **temperature & humidity** data.  
 ✅ Node.js server fetches data correctly.  
@@ -27,26 +28,26 @@ This project uses an **ESP8266** with a **DHT11 sensor** to measure **temperatur
 ### ** How It Works**
 
 1- **DHT11 Sensor** is connected to the **ESP8266**, which reads temperature & humidity.  
-2- **ESP8266 hosts a web server** and provides sensor data at `http://ESP_IP/data`.  
+2- **ESP32Mini hosts a web server** and provides sensor data at `http://ESP_IP/data`.  
 3️- **Node.js server** (running on a PC) fetches the data from ESP8266.  
 4️- The **frontend** (a simple web page) requests data from Node.js every **5 seconds** and displays it.
 5- Connects ESP8266 to **ESP battery handler**
 
 ## Features
 
-- **ESP8266 as a Web Server** → Hosts sensor data at `/data`.
+- **ESP32Mini as a Web Server** → Hosts sensor data at `/data`.
 - **Node.js Server** → Fetches ESP8266 data and serves it at `http://localhost:3000/data`.
 - **Frontend (Web Page)** → Displays real-time temperature & humidity updates.
 
 ## Current Status
 
-✅ ESP8266 successfully serves **temperature & humidity** data.  
+✅ ESP32Mini  successfully serves **temperature & humidity** data.  
 ✅ Node.js server fetches data correctly.  
 ✅ Data updates every **5 seconds** in the frontend.
 
 ## Hardware Components
 
-### **1. ESP8266 (Microcontroller)**
+### **1. ESP32Mini  (Microcontroller)**
 
 - Acts as the **main processor** and **web server**.
 - Connects to Wi-Fi to serve sensor data.
@@ -81,6 +82,6 @@ This project uses an **ESP8266** with a **DHT11 sensor** to measure **temperatur
 ## Architecture Overview
 
 1. **DHT11 sensor** measures temperature and humidity.
-2. **ESP8266 reads data** and serves it at `/data`.
+2. **ESP32Mini  reads data** and serves it at `/data`.
 3. **A computer running Node.js** fetches the data.
 4. **A web page** displays the sensor data in real time.
